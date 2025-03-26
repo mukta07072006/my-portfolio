@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.4.19",
+    "next": "14.1.0",                  // 🔥 Pinned exact version
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "framer-motion": "10.16.4",
-    "nodemailer": "6.9.8"
+    "framer-motion": "10.16.4",        // 🔥 Pinned exact version
+    "nodemailer": "6.9.8"              // 🔥 Pinned exact version
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"                 // 🔥 Updated for Vercel compatibility
   }
 }
