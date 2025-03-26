@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false, // Disabled for better compatibility
-  eslint: {
-    ignoreDuringBuilds: true, // Temporary fix for ESLint issues
+  swcMinify: false,                     // 🔥 Disabled for stability
+  experimental: {
+    serverActions: true,                // 🔥 Required for Next.js 14+
+    optimizePackageImports: [           // 🔥 Optimize these packages
+      'framer-motion',
+      'nodemailer'
+    ]
   },
-  typescript: {
-    ignoreBuildErrors: true, // Temporary fix for TypeScript
+  eslint: {
+    ignoreDuringBuilds: true            // 🔥 Temporary build fix
   }
 };
 
