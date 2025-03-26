@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Add other options if needed (e.g., images, redirects)
+  // Add other options only if needed
 };
 
 module.exports = nextConfig;
